@@ -1,9 +1,7 @@
 import { expect } from 'chai'
 import Travel from '../src/Travel';
 
-function generateDate(days: number): Date {
-  return new Date(new Date().getTime() + days * 24 * 60 * 60 * 1000);
-}
+import generateDate from './utils/generateDate';
 
 describe('Create Travel', () => {
   it('devolve um erro se a origem ou destino não tiver 3 caracteres', () => {
